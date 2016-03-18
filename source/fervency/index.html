@@ -1,0 +1,247 @@
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<?php require_once("config.php"); ?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Send Message to your teacher</title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
+<link href="default.css" rel="stylesheet" type="text/css" media="all" />
+<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+ <script src="jquery-1.11.0.js"></script>
+ <!-- Add jQuery library -->
+	<script type="text/javascript" src="fancyBox/lib/jquery-1.10.1.min.js"></script>
+
+	<!-- Add mousewheel plugin (this is optional) -->
+	<script type="text/javascript" src="fancyBox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+	<!-- Add fancyBox main JS and CSS files -->
+	<script type="text/javascript" src="fancyBox/source/jquery.fancybox.js?v=2.1.5"></script>
+	<link rel="stylesheet" type="text/css" href="fancyBox/source/jquery.fancybox.css?v=2.1.5" media="screen" />
+
+	<!-- Add Button helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancyBox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" />
+	<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+
+	<!-- Add Thumbnail helper (this is optional) -->
+	<link rel="stylesheet" type="text/css" href="fancyBox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" />
+	<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+
+	<!-- Add Media helper (this is optional) -->
+	<script type="text/javascript" src="fancyBox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+
+			/*
+			 *  Different effects
+			 */
+
+			// Change title type, overlay closing speed
+			$(".fancybox-effects-a").fancybox({
+				helpers: {
+					title : {
+						type : 'outside'
+					},
+					overlay : {
+						speedOut : 0
+					}
+				}
+			});
+
+			
+			
+
+			
+
+
+		});
+	</script>
+	<style type="text/css">
+		.fancybox-custom .fancybox-skin {
+			box-shadow: 0 0 50px #222;
+		}
+
+		
+	</style>
+<script type="text/javascript">
+/*$(document).ready(function(){     
+	
+	$('.button').click(function(){
+		
+		if( $("#email").val() == "" ||  $("#email_recipient").val() == "" ){
+			alert('Please fill e-mail completely');
+			
+			return false;
+		}
+		if(  $("#ecard").val() == "0"){
+			alert('Please choose e-card');
+		
+			return false;
+		}
+		var URL = $("#ecard").attr("action");
+	
+		$.ajax({
+			
+			type	: "POST",
+			cache	: false,
+			url		: URL,
+			data	:  $("#ecard").serialize(),
+			success: function(data) {
+			 alert('success');
+				//$("#cost").val(data);
+			}
+		});
+	 
+	 });
+});*/
+</script>
+
+</head>
+<body>
+<div id="header-wrapper">
+	<div id="header" class="container">
+		<div id="logo">
+			<span class="icon icon-fire"></span>
+			<h1><a href="#">E-CARDS</a></h1>
+			<span>UNESCO BKK <a href="www.unescobkk.org">Unescobkk.org</a></span> </div>
+		
+	</div>
+</div>
+
+<div id="wrapper3">
+	<div id="portfolio" class="container">
+		<div class="title">
+			<h2>World Teachers’ Day</h2>
+			<p><p><p><p><p><p><p><p>
+			<span class="byline">Write a short message of appreciation to your teacher - we will post it on the UNESCO Bangkok website and send it as e-postcard on 5 October!</span> </div>
+		<div class="column1">
+			<div class="box"> 
+			<a class="fancybox" href="images/ecard1.jpg" data-fancybox-group="gallery" title="English">
+				<img src="images/ecard1.jpg" alt=""  class="image image-full" style=" -webkit-box-shadow: 3px 3px 3px #7C7C7C; box-shadow: 3px 3px 3px #7C7C7C;"/>
+			</a>
+				<h3>Card No. 1 (English)</h3>
+				
+			</div>
+		</div>
+		<div class="column2">
+			<div class="box"> 
+			<a class="fancybox" href="images/ecard2.jpg" data-fancybox-group="gallery" title="(français)">
+				<img src="images/ecard2.jpg" alt=""  class="image image-full" style=" -webkit-box-shadow: 3px 3px 3px #7C7C7C; box-shadow: 3px 3px 3px #7C7C7C;"/>
+			</a>
+				<h3>Card No. 2 (français)</h3>
+			
+			</div>
+		</div>
+		<div class="column3">
+			<div class="box"> 
+			<a class="fancybox" href="images/ecard3.jpg" data-fancybox-group="gallery" title=" (Español)">
+				<img src="images/ecard3.jpg" alt=""  class="image image-full" style=" -webkit-box-shadow: 3px 3px 3px #7C7C7C; box-shadow: 3px 3px 3px #7C7C7C;"/>
+			</a>
+				<h3>Card No. 3 (Español)</h3>
+			
+			</div>
+		</div>
+		<div class="column1">
+			<div class="box"> 
+			<a class="fancybox" href="images/ecard4.jpg" data-fancybox-group="gallery" title=" (русский)">
+				<img src="images/ecard4.jpg" alt=""  class="image image-full" style=" -webkit-box-shadow: 3px 3px 3px #7C7C7C; box-shadow: 3px 3px 3px #7C7C7C;"/>
+			</a>
+				<h3>Card No. 4 (русский)</h3>
+			
+			</div>
+		</div>
+		<div class="column2">
+			<div class="box"> 
+			<a class="fancybox" href="images/ecard5.jpg" data-fancybox-group="gallery" title=" ( العربية)">
+				<img src="images/ecard5.jpg" alt=""  class="image image-full" style=" -webkit-box-shadow: 3px 3px 3px #7C7C7C; box-shadow: 3px 3px 3px #7C7C7C;"/>
+			</a>
+				<h3>Card No. 5 ( العربية)</h3>
+				
+			 </div>
+		</div>
+			<div class="column3">
+			<div class="box"> 
+			<a class="fancybox" href="images/ecard7.jpg" data-fancybox-group="gallery" title=" (Thai)">
+				<img src="images/ecard7.jpg" alt=""  class="image image-full" style=" -webkit-box-shadow: 3px 3px 3px #7C7C7C; box-shadow: 3px 3px 3px #7C7C7C;"/>
+			</a>
+				<h3>Card No. 6 (Thai)</h3>
+				
+			 </div>
+		</div>
+		<div class="column4">
+			<div class="box"> 
+			<a class="fancybox" href="images/ecard6.jpg" data-fancybox-group="gallery" title=" (中文)">
+				<img src="images/ecard6.jpg" alt=""  class="image image-full" style=" -webkit-box-shadow: 3px 3px 3px #7C7C7C; box-shadow: 3px 3px 3px #7C7C7C;"/>
+			</a>
+				<h3>Card No. 7 (中文)</h3>
+			
+			</div>
+		</div>
+		
+	</div>
+</div>
+<div id="wrapper2">
+	<div id="newsletter" class="container">
+		<div class="title">
+			<h2>SEND MESSAGE</h2>
+		</div>
+		<div class="content">
+			<form method="post" action="thankyou.php" name = "ecard" id = "ecard">
+				<div class="row half">
+					<div class="6u">Your identity :
+						<input type="text" class="text" name="name" id = "name" placeholder="Name" />
+					</div>
+					<div class="6u">
+						<input type="text" class="text" name="email" id = "email" placeholder="Email" data-validation="email" />
+					</div>
+				</div>
+				<div class="row half">
+					<div class="6u">Recipient :
+						<input type="text" class="text" name="name_recipient" id = "name_recipient" placeholder="Name" />
+					</div>
+					<div class="6u">
+						<input type="text" class="text" name="email_recipient"id = "email_recipient" placeholder="Email" />
+					</div>
+				</div>
+				<div class="row half">
+					<div class="12u">Message text
+						<textarea name="message" id = "message" placeholder="Message"></textarea>
+					</div>
+				</div>
+				<div class="row half">
+					<div class="6u">Please select one e-postcard :
+						<select name="ecard" id = "ecard" name = "ecard">
+						<option value="0">--Select Card--</option>  
+						<option value="1"> Card No.1  (English)</option>  
+						<option value="2"> Card No.2 (français)</option> 
+						<option value="3"> Card No.3 (Español)</option> 
+						<option value="4"> Card No.4 (русский)</option> 
+						<option value="5"> Card No.5 ( العربية)</option> 
+						<option value="6"> Card No.6 (Thai)</option> 
+						<option value="7"> Card No.7 (中文)</option> 
+						</section>
+					</div>
+					<div class="6u">
+						
+						 <input type="submit" class="button" value="SEND MESSAGE" id = "btn_update" /> 
+					</div>
+				
+				</div>
+				
+			
+			
+			</form>
+		</div>
+	</div>
+</div>
+
+</body>
+</html>
